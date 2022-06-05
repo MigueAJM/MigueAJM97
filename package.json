@@ -1,0 +1,11 @@
+{
+  "name": "migueajm-blog",
+  "version": "1.0.0",
+  "description": "Mi blog personal de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MigueAJM",
+  "license": "ISC"
+}

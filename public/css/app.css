@@ -1,0 +1,157 @@
+:root {
+    --main_color: #00acee;
+    --text_color: #454c4e;
+    --title-color: #1b1c1d;
+    --bg_color: #f3f8fa;
+    --bg_footer: #313333;
+    --text_footer: #f3f8fa;
+}
+
+[theme='dark'] {
+    --main_color: #00acee;
+    --text_color: #ced6de;
+    --title-color: #fff;
+    --bg_color: #171718;
+    --bg_footer: #000;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--title-color);
+}
+
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 8% 0 8%;
+}
+
+#main {
+    text-align: center;
+}
+
+#main>h1 {
+    position: relative;
+    margin-top: calc(100vh - 65vh);
+}
+
+.grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.grid-pi-c {
+    place-items: center;
+}
+
+.header {
+    height: 3.5rem;
+    box-shadow: 0.125rem 0.025rem 0.125rem 0 #ccc;
+}
+
+.header>nav {
+    margin: 0 40% 0 40%;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: all 500ms ease-in-out;
+}
+
+.logo:hover {
+    color: var(--main_color);
+    transition: 500ms ease-in-out;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg_footer);
+    color: var(--text_footer)
+}
+footer p  {
+    text-align: center;
+    padding: 1rem;
+    font-size:  1rem;
+}
+footer a  {
+    color: var(--text_footer);
+}
+footer a:hover {
+    color: var(--main_color);
+}
+
+.footer {
+    grid-template-columns:  50% 50%;
+    place-items: center;
+    padding-top: 2rem;
+}
+
+@media(min-width: 64em) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
